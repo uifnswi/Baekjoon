@@ -1,8 +1,6 @@
 n=int(input())
-num=input()
-sum=0
-
+sum=input()
+r=0
 for i in range(n):
-    sum+=int(num[i])
-    
-print(sum)
+    r+=int(sum[i])
+print(r)
