@@ -1,7 +1,8 @@
 h,m=map(int,input().split())
-a=h*60+m-45
-h=a//60
-m=a%60
-if h<0:
-    h+=24
+t=h*60+m-45
+if t//60<0:
+    h=t//60+24
+else:
+    h=t//60
+m=t%60
 print(h,m)
