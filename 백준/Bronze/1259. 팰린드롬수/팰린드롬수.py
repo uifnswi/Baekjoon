@@ -1,10 +1,20 @@
 while True:
-    t=input()
-    if t=='0':
+    a=True
+    n=int(input())
+    if n==0:
         break
     else:
-        if t==t[::-1]:
+        c=str(n)
+
+        for i in range(len(c)//2):
+            if c[len(c)-1-i]==c[i]:
+                continue
+            else:
+                a=False
+                print('no')
+                break
+
+        if a==True:
             print('yes')
-        else:
-            print('no')
     
+        
