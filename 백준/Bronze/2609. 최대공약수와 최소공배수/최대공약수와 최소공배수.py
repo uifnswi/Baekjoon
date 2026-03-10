@@ -1,12 +1,10 @@
 a,b=map(int, input().split())
-
-def gcd(a,b):
-    while b:
-        a,b=b,a%b
-    return a
-
-g=gcd(a,b)
-l=a*b//g
-
-print(g)
-print(l)
+n=0
+for i in range(min(a,b),0,-1):
+    if a%i==0 and b%i==0:
+        print(i)
+        n=i
+        break
+    
+print(int(a*b/n))
+        
