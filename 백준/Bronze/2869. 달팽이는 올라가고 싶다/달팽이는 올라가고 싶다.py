@@ -1,8 +1,4 @@
-import sys
-input=sys.stdin.readline
-
 a,b,v=map(int,input().split())
-
-cnt=(v-a-1)//(a-b)+2
-
-print(cnt)
+if (v-b)%(a-b)>=1:
+    print((v-b)//(a-b)+1)
+else:print((v-b)//(a-b))
